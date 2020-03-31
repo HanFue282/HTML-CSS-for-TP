@@ -30,13 +30,23 @@
                             <p class="mb-3 text-white">
                                 Please enter your email address and we will send you a password reset link
                             </p>
-                            <div>
-                                
+                            <div class="form-input">
+                                <span><i class="fa fa-envelope"></i></span>
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <button type="submit" class="btn">Send Link</button>
                             </div>
                         </form>
                     </div>
+                    <div class="reset-confirmation d-none">
+                        <h4 class="mb-3">Link was sent!</h4>
+                        <h6 class="text-white">Please check your inbox for password reset link.</h6>
+                    </div>
+                    <div><a href="login.html">
+                        <button type="submit" class="btn">Login Now</button>
+                    </a></div>
                 </div>
-                
             </div>
         </div>
     </div>
