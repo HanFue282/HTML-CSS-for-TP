@@ -87,7 +87,7 @@ ul.account-content {
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 
 .account-content li {
@@ -96,7 +96,7 @@ ul.account-content {
     background-clip: content-box;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 .account-left {
@@ -106,4 +106,40 @@ ul.account-content {
 
 .account-right {
     flex-basis: 70%;
+}
+
+.brand-cards {
+    display: inline-flex;
+    padding-right: 10px;
+    margin-bottom: 1;
+}
+
+.favorite-title {
+    padding-left: 120px;
+    font-size: 45px;
+}
+
+/* Brand cards */
+span {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 100px;
+}
+
+/* When screen size changes for cards */
+@media(max-width:1000px){
+    span{
+        padding: 35px 50px;
+    }
+}
+
+@media(max-width:600px){
+    span{
+        padding: 35px 84px;
+    }
 }
